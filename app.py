@@ -4,7 +4,7 @@ from langchain.chat_models import ChatOpenAI
 import os
 
 # Environmental variables
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = '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'
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = 'sk-....' # Replace with own key
 
 
 # LLM
