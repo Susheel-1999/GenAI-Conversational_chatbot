@@ -4,11 +4,11 @@ from langchain.chat_models import ChatOpenAI
 import os
 
 # Environmental variables
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = 'sk-....' # Replace with own key
+os.environ["API_TOKEN"] = 'sk-....' # Replace with own key
 
 
 # LLM
-llm = ChatOpenAI(temperature = 0.7, model_name = "gpt-3.5-turbo", openai_api_key = os.getenv("HUGGINGFACEHUB_API_TOKEN")) 
+llm = ChatOpenAI(temperature = 0.7, model_name = "gpt-3.5-turbo", openai_api_key = os.getenv("API_TOKEN")) 
 system_msg = "You are a helpful assistant"
 
 def display_chat_history(history):
